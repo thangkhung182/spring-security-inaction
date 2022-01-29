@@ -1,0 +1,11 @@
+services:
+  mariadb:
+    image: mariadb:10.7.1
+    restart: always
+    ports:
+      - 3308:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: Trung123#
+      MARIADB_DATABASE: spring
+      MARIADB_USER: spring
+      MARIADB_PASSWORD: spring123#
